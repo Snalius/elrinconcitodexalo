@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#FF6B35">
+    <title>Menús de Temporada - El Rinconcito de Xaló</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">El Rinconcito de Xaló</div>
+            <ul class="nav-menu">
+                <li><a href="main.html">🏠 Inicio</a></li>
+                <li><a href="carta-tapas.html">🍽️ Carta de Tapas</a></li>
+                <li><a href="menus-temporada.html">🍂 Menús de Temporada</a></li>
+                <li><a href="main.html#contacto">📞 Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="seasonal-menus" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="menu-hero">
+                <a href="main.html" class="btn-primary" style="margin-bottom: 2rem; display: inline-block;">← Volver al Inicio</a>
+                <div class="menu-icon">🍂</div>
+                <h1 class="menu-main-title">Menús de Temporada</h1>
+                <p class="menu-main-subtitle">Selecciona el menú disponible según la temporada actual</p>
+            </div>
+            
+            <div class="menu-selector">
+                <h3>¿Qué menú está vigente actualmente?</h3>
+                <div class="menu-buttons">
+                    <button class="menu-btn active" data-menu="menu1">Menú Gourmet</button>
+                    <button class="menu-btn" data-menu="menu2">Menú de Tapas</button>
+                    <button class="menu-btn" data-menu="menu3">Menú Tradicional</button>
+                </div>
+            </div>
+            
+            <div class="seasonal-menu-container">
+                <div class="seasonal-menu active" id="menu1">
+                    <div class="menu-header">
+                        <h3 class="menu-name">Menú Gourmet</h3>
+                        <div class="menu-price">25€</div>
+                    </div>
+                    <div class="menu-includes">
+                        <h4>Incluye:</h4>
+                        <ul>
+                            <li>Pan de la casa</li>
+                            <li>Una bebida (agua, refresco o cerveza)</li>
+                        </ul>
+                    </div>
+                    <div class="menu-sections">
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🥗</span>
+                                <h4>Entrantes</h4>
+                            </div>
+                            <ul>
+                                <li>Ensalada de mango y aguacate</li>
+                                <li>Ensalada mixta</li>
+                            </ul>
+                        </div>
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🍖</span>
+                                <h4>Platos Principales</h4>
+                            </div>
+                            <ul>
+                                <li>Solomillo con salsa casera</li>
+                                <li>Ternera con tinto y romero</li>
+                                <li>Emperador</li>
+                            </ul>
+                        </div>
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🍨</span>
+                                <h4>Postres</h4>
+                            </div>
+                            <ul>
+                                <li>Helado de mango</li>
+                                <li>Helado de frutos rojos</li>
+                                <li>Fruta de temporada</li>
+                                <li>Café</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seasonal-menu" id="menu2">
+                    <div class="menu-header">
+                        <h3 class="menu-name">Menú de Tapas</h3>
+                        <div class="menu-price">19,50€</div>
+                    </div>
+                    <div class="menu-includes">
+                        <h4>Incluye:</h4>
+                        <ul>
+                            <li>Pan de fogaza con alioli</li>
+                            <li>Postre o café</li>
+                            <li>1 bebida</li>
+                        </ul>
+                    </div>
+                    <div class="menu-sections">
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🥗</span>
+                                <h4>Entrantes (a elegir 1)</h4>
+                            </div>
+                            <ul>
+                                <li>Ensalada mixta</li>
+                                <li>Ensalada de mango</li>
+                            </ul>
+                        </div>
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🍽️</span>
+                                <h4>Tapas (todas incluidas)</h4>
+                            </div>
+                            <ul>
+                                <li>Albóndigas</li>
+                                <li>Croquetas variadas</li>
+                                <li>Alitas de pollo</li>
+                                <li>Ensaladilla rusa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seasonal-menu" id="menu3">
+                    <div class="menu-header">
+                        <h3 class="menu-name">Menú Tradicional</h3>
+                        <div class="menu-price">23€</div>
+                    </div>
+                    <div class="menu-includes">
+                        <h4>Incluye:</h4>
+                        <ul>
+                            <li>Pan</li>
+                            <li>Ali olí</li>
+                            <li>Tomate</li>
+                            <li>Bebida</li>
+                        </ul>
+                    </div>
+                    <div class="menu-sections">
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🥗</span>
+                                <h4>Entradas</h4>
+                            </div>
+                            <ul>
+                                <li>Ensalada de Mozzarella</li>
+                                <li>Entremeses</li>
+                                <li>Ensalada Mixta</li>
+                            </ul>
+                        </div>
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🍖</span>
+                                <h4>Plato Principal</h4>
+                            </div>
+                            <ul>
+                                <li>Solomillo con salsa de champiñones</li>
+                                <li>Emperador</li>
+                                <li>Entrecot</li>
+                            </ul>
+                        </div>
+                        <div class="menu-section">
+                            <div class="section-header">
+                                <span class="section-emoji">🍨</span>
+                                <h4>Postre</h4>
+                            </div>
+                            <ul>
+                                <li>Fruta del tiempo o Helado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 El Rinconcito de Xaló. Sabores del Mediterráneo en la Vall del Pop.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seasonal Menu Functionality
+        const menuButtons = document.querySelectorAll('.menu-btn');
+        const seasonalMenus = document.querySelectorAll('.seasonal-menu');
+
+        menuButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                menuButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Hide all menus
+                seasonalMenus.forEach(menu => menu.classList.remove('active'));
+                
+                // Show selected menu
+                const targetMenu = button.getAttribute('data-menu');
+                document.getElementById(targetMenu).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

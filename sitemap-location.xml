@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>El Rinconcito de Xaló</name>
+    <description>Restaurante mediterráneo en Xaló, Alicante</description>
+    <Placemark>
+      <name>El Rinconcito de Xaló</name>
+      <description>
+        <![CDATA[
+        <h3>El Rinconcito de Xaló</h3>
+        <p>Restaurante mediterráneo especializado en cocina valenciana y mistela</p>
+        <p><strong>Dirección:</strong> Calle San Judas 23, 03727 Xaló-Jalón, Alicante, España</p>
+        <p><strong>Teléfono:</strong> 610 78 90 14</p>
+        <p><strong>Email:</strong> rinconcitodexalo@gmail.com</p>
+        <p><strong>Horarios:</strong><br>
+        Martes a Sábado: 6:00 - 23:30<br>
+        Domingo: 6:00 - 16:00<br>
+        Lunes: Cerrado</p>
+        ]]>
+      </description>
+      <address>Calle San Judas 23, 03727 Xaló-Jalón, Alicante, España</address>
+      <phoneNumber>+34 610 78 90 14</phoneNumber>
+      <Point>
+        <coordinates>-0.0547,38.7394,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

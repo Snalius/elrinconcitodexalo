@@ -1,0 +1,22 @@
+{
+  "name": "El Rinconcito de Xaló",
+  "short_name": "Rinconcito",
+  "description": "Restaurante mediterráneo en la Vall del Pop",
+  "start_url": "/main.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FF6B35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "image/Portada_restaurante.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "image/Portada_restaurante.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

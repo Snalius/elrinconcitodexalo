@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="theme-color" content="#FF6B35">
+    <meta name="description" content="El Rinconcito de Xaló - Restaurante mediterráneo en Calle San Judas 23, Xaló-Jalón, Alicante. Cocina tradicional valenciana, mistela y tapas. Tel: 610 78 90 14">
+    <meta name="keywords" content="restaurante Xaló, Jalón, Vall del Pop, cocina mediterránea, mistela, restaurante Alicante, cocina valenciana, Calle San Judas, 03727">
+    <meta name="author" content="El Rinconcito de Xaló">
+    <meta name="geo.region" content="ES-VC">
+    <meta name="geo.placename" content="Xaló, Alicante, España">
+    <meta name="geo.position" content="38.7394;-0.0547">
+    <meta name="ICBM" content="38.7394, -0.0547">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.elrinconcitodexalo.com/">
+    <title>El Rinconcito de Xaló - Restaurante Mediterráneo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/Portada_restaurante.jpeg">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="image/Portada_restaurante.jpeg">
+    <link rel="manifest" href="manifest.json">
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcYourSiteKey_AAAAAAAAAAAAAAAAAAAAAAAAAAAA"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">El Rinconcito de Xaló</a>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#inicio" role="menuitem">🏠 Inicio</a></li>
+                <li role="none"><a href="#galeria" role="menuitem">📷 Galería</a></li>
+                <li role="none"><a href="carta-tapas.html" role="menuitem">🍽️ Carta de Tapas</a></li>
+                <li role="none"><a href="menus-temporada.html" role="menuitem">🍂 Menús de Temporada</a></li>
+                <li role="none"><a href="#sobre-nosotros" role="menuitem">📖 Sobre Nosotros</a></li>
+                <li role="none"><a href="#platos" role="menuitem">🍽️ Nuestros Platos</a></li>
+                <li role="none"><a href="#contacto" role="menuitem">📞 Contacto</a></li>
+            </ul>
+            <button class="hamburger" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">El Rinconcito de Xaló</h1>
+            <p class="subtitle">Sabores Mediterráneos en el Corazón de la Vall del Pop</p>
+            <a href="#platos" class="btn-primary" aria-label="Ir a la sección de nuestros platos">Descubre Nuestros Platos</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="galeria" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Galería del Restaurante</h2>
+            <p class="section-subtitle">Descubre la belleza y el ambiente de El Rinconcito de Xaló</p>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Las imágenes se cargarán dinámicamente -->
+            </div>
+            
+            <div class="gallery-controls">
+                <button id="loadMoreBtn" class="btn-load-more">Ver Más Fotos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para galería -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close">&times;</span>
+            <img id="galleryModalImage" src="" alt="">
+            <div class="gallery-nav">
+                <button id="prevBtn" class="gallery-nav-btn">&lt;</button>
+                <button id="nextBtn" class="gallery-nav-btn">&gt;</button>
+            </div>
+            <div class="gallery-counter">
+                <span id="imageCounter">1 / 84</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="sobre-nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Bienvenidos a Xaló</h2>
+                    <p>En el corazón de la Vall del Pop, donde los almendros florecen y las viñas se extienden bajo el sol mediterráneo, se encuentra <strong>El Rinconcito de Xaló</strong>.</p>
+                    <p>Nuestro restaurante, con sus paredes blancas adornadas por flores de almendro, es un homenaje a la tradición culinaria valenciana y a los tesoros de nuestra tierra: la mistela y la cosecha de uvas que han definido a Xaló durante generaciones.</p>
+                    <p>Cada plato cuenta una historia, cada sabor evoca la esencia del Mediterráneo. Te invitamos a descubrir la auténtica cocina de la Vall del Pop.</p>
+                </div>
+                <div class="about-image">
+                    <img src="image/iglesia_parroquial_xalo.jpg" alt="Vista de la Iglesia Parroquial de Xaló, un hermoso edificio histórico en el corazón de nuestro pueblo mediterráneo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="platos" class="dishes">
+        <div class="container">
+            <h2 class="section-title">Conoce Algunos de Nuestros Platos</h2>
+            <p class="section-subtitle">Pasa el cursor sobre cada plato para ver su preparación</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="ensaladas">Ensaladas</button>
+                <button class="filter-btn" data-category="entrantes">Entrantes</button>
+                <button class="filter-btn" data-category="principales">Principales</button>
+                <button class="filter-btn" data-category="postres">Postres</button>
+            </div>
+            
+            <div class="dishes-grid">
+                <div class="dish-card" data-dish="sopa" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/sopa.jpeg" alt="Sopa tradicional valenciana con verduras frescas y fideos artesanales" class="dish-image" loading="lazy">
+                        <video src="videos/sopa_video.mp4" class="dish-video" muted loop playsinline aria-label="Video de preparación de sopa tradicional"></video>
+                        <div class="shimmer" aria-hidden="true"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Sopa Tradicional</h3>
+                        <p>Un caldo reconfortante elaborado con verduras frescas de la huerta valenciana, fideos artesanales y un sofrito que evoca las recetas de nuestras abuelas. Perfecta para comenzar cualquier comida.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="ensalada_de_casa" data-category="ensaladas">
+                    <div class="media-container">
+                        <img src="image/ensalada_de_casa.jpeg" alt="Ensalada de higos y mango" class="dish-image">
+                        <video src="videos/ensalada_de_casa_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ensalada de higos y mango</h3>
+                        <p>Exquisita combinación de higos frescos, mango maduro, rúcula, queso de cabra y nueces, aliñada con vinagreta de miel y mostaza. Una explosión de sabores dulces y salados que conquista el paladar.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="ensalada_mixta" data-category="ensaladas">
+                    <div class="media-container">
+                        <img src="image/ensalada_mixta.jpeg" alt="Ensalada Mixta" class="dish-image">
+                        <video src="videos/ensalada_mixta_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ensalada Mixta</h3>
+                        <p>Combinación equilibrada de lechuga, tomate, cebolla, atún, huevo cocido y espárragos. Un clásico renovado con ingredientes de primera calidad.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="ensalada_queso_de_cabra" data-category="ensaladas">
+                    <div class="media-container">
+                        <img src="image/ensalada_queso_de_cabra.jpeg" alt="Ensalada con Queso de Cabra" class="dish-image">
+                        <video src="videos/ensalada_queso_de_cabra_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ensalada con Queso de Cabra</h3>
+                        <p>Brotes tiernos, queso de cabra gratinado, nueces caramelizadas y reducción de mistela. Una explosión de texturas y sabores que marida perfectamente con nuestros vinos locales.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="ensalda_de_mango" data-category="ensaladas">
+                    <div class="media-container">
+                        <img src="image/ensalda_de_mango.jpeg" alt="Ensalada de Mango" class="dish-image">
+                        <video src="videos/ensalda_de_mango_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ensalada de Mango</h3>
+                        <p>Propuesta tropical con mango fresco, aguacate, langostinos y vinagreta de cítricos. Un contraste exótico que sorprende al paladar más exigente.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="ensaladilla_rusa" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/ensaladilla_rusa.jpeg" alt="Ensaladilla Rusa" class="dish-image">
+                        <video src="videos/ensaladilla_rusa_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ensaladilla Rusa</h3>
+                        <p>La receta tradicional con patatas, zanahorias, guisantes, atún y mayonesa casera. Cremosa, sabrosa y siempre apetecible como entrante o tapa.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="coca_de_tomate" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/coca_de_tomate.jpeg" alt="Coca de Tomate" class="dish-image">
+                        <video src="videos/coca_de_tomate_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Coca de Tomate</h3>
+                        <p>Masa artesanal crujiente cubierta con tomate natural, pimientos asados y aceite de oliva. Un bocado valenciano que captura la esencia del Mediterráneo.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="tortilla_de_patatas" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/tortilla_de_patatas.jpeg" alt="Tortilla de Patatas" class="dish-image">
+                        <video src="videos/tortilla_de_patatas_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Tortilla de Patatas</h3>
+                        <p>Jugosa por dentro, dorada por fuera. Elaborada con patatas confitadas en aceite de oliva y huevos frescos. El clásico español en su máxima expresión.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="gambas_rebosadas" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/gambas_rebosadas.jpeg" alt="Gambas Rebozadas" class="dish-image">
+                        <video src="videos/gambas_rebosadas_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Gambas Rebozadas</h3>
+                        <p>Gambas frescas del Mediterráneo envueltas en un rebozado ligero y crujiente. Servidas con alioli casero para una experiencia marina inolvidable.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="alitas_de_pollo" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/alitas_de_pollo.jpeg" alt="Alitas de Pollo" class="dish-image">
+                        <video src="videos/alitas_de_pollo_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Alitas de Pollo</h3>
+                        <p>Alitas marinadas con especias mediterráneas, horneadas hasta alcanzar el punto perfecto de crujiente. Ideales para compartir con una copa de vino.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="champiñones_plancha" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/champiñones_plancha.jpeg" alt="Champiñones a la Plancha" class="dish-image">
+                        <video src="videos/champiñones_plancha_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Champiñones a la Plancha</h3>
+                        <p>Champiñones frescos salteados con ajo, perejil y un toque de limón. Sencillez que realza el sabor natural de la tierra.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="verduras_plancha" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/verduras_plancha.jpeg" alt="Verduras a la Plancha" class="dish-image">
+                        <video src="videos/verduras_plancha_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Verduras a la Plancha</h3>
+                        <p>Selección de verduras de temporada asadas a la perfección: calabacín, berenjena, pimientos y cebolla. Salud y sabor en armonía.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="sepia_con_picaeta" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/sepia_con_picaeta.jpeg" alt="Sepia con Picaeta" class="dish-image">
+                        <video src="videos/sepia_con_picaeta_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Sepia con Picaeta</h3>
+                        <p>Sepia tierna a la plancha acompañada de nuestra picaeta tradicional: ajo, perejil y guindilla. Un plato marinero con carácter valenciano.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="pelota_valenciana" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/pelota_valenciana.jpeg" alt="Pelota Valenciana" class="dish-image">
+                        <video src="videos/pelota_valenciana_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Pelota Valenciana</h3>
+                        <p>Albóndiga gigante de carne picada con especias, cocida en caldo aromático. Un plato tradicional que conecta con nuestras raíces culinarias.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="figatell" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/figatell.jpeg" alt="Figatell" class="dish-image">
+                        <video src="videos/figatell_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Figatell</h3>
+                        <p>Embutido artesanal valenciano elaborado con hígado de cerdo y especias. Un sabor intenso y auténtico que rinde homenaje a la charcutería tradicional.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="barbacoa_con_verduras" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/barbacoa_con_verduras.jpeg" alt="Barbacoa con Verduras" class="dish-image">
+                        <video src="videos/barbacoa_con_verduras_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Barbacoa con Verduras</h3>
+                        <p>Carnes selectas a la brasa acompañadas de verduras asadas. El sabor ahumado se fusiona con la frescura de los vegetales en un plato completo y satisfactorio.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="tenera_en_salsa" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/tenera_en_salsa.jpeg" alt="Ternera en Salsa" class="dish-image">
+                        <video src="videos/tenera_en_salsa_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ternera en Salsa</h3>
+                        <p>Medallones de ternera tierna en salsa de vino tinto reducida con setas y hierbas aromáticas. Un plato elegante que marida excelentemente con nuestros vinos de la Vall.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="plato_combinado" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/plato_combinado.jpeg" alt="Plato Combinado" class="dish-image">
+                        <video src="videos/plato_combinado_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Plato Combinado</h3>
+                        <p>La opción perfecta para los indecisos: carne, huevo, patatas fritas y ensalada. Generoso, sabroso y siempre satisfactorio.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="postre_de_chocolate" data-category="postres">
+                    <div class="media-container">
+                        <img src="image/postre_de_chocolate.jpeg" alt="Postre de Chocolate" class="dish-image">
+                        <video src="videos/postre_de_chocolate_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Postre de Chocolate</h3>
+                        <p>Coulant de chocolate con corazón fundido, acompañado de helado de vainilla. Un final dulce e intenso que conquista a los amantes del cacao.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="postre_helado" data-category="postres">
+                    <div class="media-container">
+                        <img src="image/postre_helado.jpeg" alt="Postre Helado" class="dish-image">
+                        <video src="videos/postre_helado_video.mp4" class="dish-video" muted loop playsinline></video>
+                        <div class="shimmer"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Postre Helado</h3>
+                        <p>Selección de helados artesanales con sabores mediterráneos: limón, mistela y almendra. Refrescante y perfecto para cerrar cualquier comida.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="chorizos" data-category="entrantes">
+                    <div class="media-container">
+                        <img src="image/chorizos.jpeg" alt="Chorizos artesanales a la brasa con sabor ahumado" class="dish-image" loading="lazy">
+                        <video src="videos/video_chorizos.mp4" class="dish-video" muted loop playsinline aria-label="Video de preparación de chorizos a la brasa"></video>
+                        <div class="shimmer" aria-hidden="true"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Chorizos a la Brasa</h3>
+                        <p>Chorizos artesanales asados a la brasa, jugosos y aromáticos. Perfectos como tapa o acompañamiento, con el sabor ahumado que solo el fuego puede dar.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="ensalada_mozarella" data-category="ensaladas">
+                    <div class="media-container">
+                        <img src="image/ensalada_mozarella.jpeg" alt="Ensalada fresca con queso mozzarella y tomates" class="dish-image" loading="lazy">
+                        <video src="videos/video_ensalada.mp4" class="dish-video" muted loop playsinline aria-label="Video de preparación de ensalada con mozzarella"></video>
+                        <div class="shimmer" aria-hidden="true"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Ensalada con Mozzarella</h3>
+                        <p>Ensalada fresca con mozzarella de búfala, tomates cherry, albahaca y aceite de oliva virgen extra. Un clásico mediterráneo lleno de sabor y frescura.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="pescado_emperador" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/pescado_emperador.jpeg" alt="Pescado emperador a la plancha con guarnición" class="dish-image" loading="lazy">
+                        <video src="videos/video_emperador.mp4" class="dish-video" muted loop playsinline aria-label="Video de preparación de pescado emperador"></video>
+                        <div class="shimmer" aria-hidden="true"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Pescado Emperador</h3>
+                        <p>Emperador fresco a la plancha con verduras de temporada y patatas. Un pescado noble del Mediterráneo preparado con la técnica tradicional.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="entrecot_patatas" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/entrecot_patatas.jpeg" alt="Entrecot de ternera con patatas y verduras" class="dish-image" loading="lazy">
+                        <video src="videos/video_entrecot.mp4" class="dish-video" muted loop playsinline aria-label="Video de preparación de entrecot con patatas"></video>
+                        <div class="shimmer" aria-hidden="true"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Entrecot con Patatas y Verduras</h3>
+                        <p>Jugoso entrecot de ternera a la plancha acompañado de patatas asadas y verduras frescas. Un plato contundente y sabroso para los amantes de la carne.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-dish="solomillo_champinones" data-category="principales">
+                    <div class="media-container">
+                        <img src="image/solomillo_champinones.jpeg" alt="Solomillo de cerdo con champiñones en salsa" class="dish-image" loading="lazy">
+                        <video src="videos/video_solomillo.mp4" class="dish-video" muted loop playsinline aria-label="Video de preparación de solomillo con champiñones"></video>
+                        <div class="shimmer" aria-hidden="true"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Solomillo con Champiñones</h3>
+                        <p>Tierno solomillo de cerdo en salsa de champiñones con hierbas aromáticas. Una combinación perfecta que realza los sabores de la carne y los hongos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visítanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Ubicación</h3>
+                        <p>Calle San Judas 23<br>03727 Xaló - Jalón<br>Alicante, España</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🕒 Horario</h3>
+                        <p><strong>Martes a Sábado:</strong> 6:00 - 23:30<br>
+                        <strong>Domingo:</strong> 6:00 - 16:00<br>
+                        <strong>Lunes:</strong> Cerrado</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Reservas</h3>
+                        <p>Tel: 610 78 90 14<br>rinconcitodexalo@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+                <div class="map-container">
+                    <h3 class="map-title">Cómo llegar</h3>
+                    <div class="map-frame">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.9747103248237!2d-0.013523023553341751!3d38.74134255589612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61fdd29639b7b3%3A0x2a42502c698d2056!2sEl%20Rinconcito%20de%20Xal%C3%B3!5e0!3m2!1ses!2ses!4v1759853056866!5m2!1ses!2ses" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <div id="dishModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                    <video id="modalVideo" src="" class="modal-video" controls loop></video>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalPrice" class="modal-price"></p>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-toggle" onclick="toggleChat()">
+            <span id="chatIcon">💬</span>
+        </div>
+        <div id="chatBox" class="chat-box">
+            <div class="chat-header">
+                <span>🤖 Asistente Virtual - El Rinconcito de Xaló</span>
+                <button onclick="toggleChat()" class="chat-close">×</button>
+            </div>
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    ¡Hola! Soy el asistente de El Rinconcito de Xaló. ¿En qué puedo ayudarte? 😊
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Escribe tu mensaje..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()" id="sendBtn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>🍪 Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra <a href="terminos.html">Política de Cookies</a>.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="cookie-btn accept">Aceptar</button>
+                <button id="rejectCookies" class="cookie-btn reject">Rechazar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 El Rinconcito de Xaló. Sabores del Mediterráneo en la Vall del Pop.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="terminos.html" style="color: var(--white); text-decoration: none; margin: 0 1rem;">Términos y Condiciones</a> | 
+                <a href="terminos.html" style="color: var(--white); text-decoration: none; margin: 0 1rem;">Política de Privacidad</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
